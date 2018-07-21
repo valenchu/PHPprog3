@@ -1,0 +1,64 @@
+/*Modifica el titulo principal*/
+#tituloCabecera{
+    text-align: center;
+    background: #ffffcc;
+
+}
+la{
+    margin:  100px;
+    
+}
+/*Modifico boton buscar*/
+#btnEnviar{
+     border: none;
+    background: #3a7999;
+    color: #f2f2f2;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+}
+#btnEnviar:hover{
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+/*Modifica la tabla dentro de la Web*/
+table{
+    background: #ffffcc;
+    border: 1px solid black; 
+    margin: 100px 0px 0px 160px;
+
+}
+/*Contenido celdas principales*/
+th{
+    border: #cccc00 1px solid;
+    
+}
+/*Contnido demas celdas*/
+td{
+    border: #cccc00 1px solid;
+}
+/*Modifica el cuerpo de la web todo lo que esta adentro*/
+body{
+    background: #ccffcc;
+}
+button {
+    border: none;
+    background: #3a7999;
+    color: #f2f2f2;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+
+}
+button:hover{
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
