@@ -46,4 +46,8 @@ class Conexion {
        $con = null;
        
     }
+    function fechaEspanol($fecha){
+        $formatearFecha = date('d/m/Y', strtotime($fecha));
+        return $formatearFecha;
+    }
 }

@@ -4,7 +4,8 @@
         
 //COMPROBAMOS SI HAY REGISTROS EN LA BUSQUEDA, SI NO LOS HAY, MOSATRAMOS UN MENSAJE DICIENDO QUE NO HAY RESULTADOS, EN OTRO CASO, MOSTRAMOS LOS RESULTADOS
       function ejecutar(){
-            require_once  "ConsultasBD/class.php";
+           require_once  "ConsultasBD/class.php";
+    
     $bus = new Buscador();
     $buscame = $bus->buscar();  
          if (count($buscame) == 0){
@@ -50,4 +51,6 @@
             }
         }
       }
+      
+      
         

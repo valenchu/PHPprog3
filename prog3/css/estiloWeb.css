@@ -29,34 +29,21 @@ la{
 table{
     background: #ffffcc;
     border: 1px solid black; 
-    margin: 10px 0px 0px 10px;
-    
+    margin: 100px 0px 0px 160px;
 
 }
 /*Contenido celdas principales*/
 th{
     border: #cccc00 1px solid;
-padding: 10px;
-text-align: center;
+    
 }
-
 /*Contnido demas celdas*/
-td{ 
+td{
     border: #cccc00 1px solid;
-        padding: 10px;
-    text-align: left;
-}
-/*modifico detalle*/
-#detalle{
-    width: 200px;
 }
 /*Modifica el cuerpo de la web todo lo que esta adentro*/
 body{
     background: #ccffcc;
-}
-/*modifico botones*/
-#bononborrar{
-    margin-top: 10px; 
 }
 button {
     border: none;
@@ -74,21 +61,4 @@ button:hover{
     background: rgba(0,0,0,0);
     color: #3a7999;
     box-shadow: inset 0 0 0 3px #3a7999;
-}
-label{
-    font-weight: 600;
-}
-/*etiqueta por producto*/
-#la{
-    margin: 80px;
-}
-/*etiqqueta fecha*/
-#hasta{
-   margin-left: -100px
-}
-#desde{
-    margin: 180px;
-}
-#dateDesde{
-    margin: 20px
 }

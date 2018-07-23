@@ -26,8 +26,11 @@ class Buscador
         while ($reg =$res->fetch(PDO::FETCH_ASSOC))
         {
             $this->busqueda[] = $reg;
+            
         }
-      
+      if(count($this->busqueda)==0){
+          return $this->texto = "No hay resultado";
+      }
         return $this->busqueda;
     }
     return $this->busqueda;
@@ -35,6 +38,7 @@ class Buscador
 }
 
 class buscador2{
+    private $buscarYAla = array();
 function buscarYa(){
     $c = new Conexion();
     $sql = "SELECT  venta.idVenta, venta.Usuario,detallevta.IDproducto, "
@@ -47,15 +51,9 @@ function buscarYa(){
         $res->execute();
         while ($reg =$res->fetch(PDO::FETCH_ASSOC))
         {
-            echo "<tr>"."<td>".$reg["idVenta"]."</td>"."<td>".$reg["Usuario"]."</td>"
-                    ."<td>".$reg["IDproducto"]."</td>"."<td>".$reg["Descripcion"]."</td>"
-                    ."<td>".$reg["Fecha"]."</td>"."<td>".$reg["PrecioSIVA"]."</td>"
-                    ."<td>".$reg["Cant"]."</td>"."<td>".$reg["oferta"]."</td>"
-                    ."<td>".$reg["Importe"]."</td>".
-            
-            
-            "</tr>";
+            $this->buscarYAla[] = $reg ;
         }
+        return $this->buscarYAla;
 }
 }
 
